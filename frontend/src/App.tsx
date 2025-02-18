@@ -1,17 +1,10 @@
-import React from 'react';
-import BlogList from './components/BlogList'; // Make sure this path is correct
+import BlogList from './components/BlogList';
 
-const App: React.FC = () => {
+function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Welcome to My Blog</h1>
-      </header>
-
-      {/* Render the BlogList component */}
-      <main>
-        <BlogList />
-      </main>
+      <h1 className="text-2xl font-bold text-center my-6">Blog Posts</h1>
+      <BlogList />
     </div>
   );
 }
